@@ -1,0 +1,84 @@
+.section1{
+    border: 10px solid rgb(222, 247, 255);
+    border-radius: 20px;
+    box-shadow: 5px 10px rgb(145, 188, 237);
+    
+}
+.section{
+    margin-top: 30px;
+}
+.carousel-inner{
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 150px;
+    text-align: center;
+}
+.container{
+    margin-top: 50px;
+}
+.img_qr{
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.d-flex{
+    margin-top: 10px;
+}
+.img_test{
+    border-radius: 30px;
+    width: 400px;
+    height: 300px;
+}
+.container-game{
+    margin-top: 30px;
+    background-color: black;
+    text-align: center;
+}
+.title{
+    margin-top: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title-carousel{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 150px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.title-qr{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.navbar-brand{
+    font-family: fantasy;
+}
+.offcanvas-title{
+    font-family: fantasy;
+}
+.pcouresel{
+    margin-left: 30px;
+    margin-right: 160px;
+}
+
+.container-carousel{
+    margin-top: 100px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: rgb(220,220,220);
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow: 10px 5px 5px rgb(57, 56, 56);
+}
+.carousel-control-next-icon{
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: rgb(220,220,220);
+}
+.carousel-control-prev-icon{
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: rgb(220,220,220);
+}
+
