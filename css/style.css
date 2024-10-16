@@ -7,12 +7,6 @@
 .section{
     margin-top: 30px;
 }
-.carousel-inner{
-    justify-content: center;
-    margin-left: 70px;
-    margin-right: 150px;
-    text-align: center;
-}
 .container{
     margin-top: 50px;
 }
@@ -39,17 +33,20 @@
     margin-top: 30px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline rgb(220,220,220);
 }
 .title-carousel{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-right: 150px;
-    margin-left: 10px;
+    margin-left: 200px;
     margin-top: 30px;
+    text-decoration: underline rgb(220,220,220);
 }
 .title-qr{
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline rgb(220,220,220);
 }
 .navbar-brand{
     font-family: fantasy;
@@ -61,9 +58,9 @@
     margin-left: 30px;
     margin-right: 160px;
 }
-
+/* -----BOX-------
 .container-carousel{
-    margin-top: 100px;
+    margin-top: 30px;
     border-style: solid;
     border-radius: 30px;
     border-color: rgb(220,220,220);
@@ -71,14 +68,33 @@
     margin-right: 50px;
     box-shadow: 10px 5px 5px rgb(57, 56, 56);
 }
+*/
 .carousel-control-next-icon{
     margin-left: 30px;
     border-radius: 10px;
     background-color: rgb(220,220,220);
 }
 .carousel-control-prev-icon{
-    margin-right: 30px;
+    margin-right: 60px;
     border-radius: 10px;
     background-color: rgb(220,220,220);
+}
+.subtitle{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.listcarousel{
+    list-style-image: url(../img/Frameic.ico);
+    margin-top: 30px;
+    margin-left: 100px;
+    line-height: 3.0;
+}
+.img_carousel{
+    margin-left: 400px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    width: 550px;
+    height: 300px;
 }
 
