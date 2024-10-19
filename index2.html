@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="fonts/webfonts">
+  <link rel="shortcut icon" type="imagex/png" href="img/A6 - 1 (3).ico">
+  <title>Paradigmas</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+
+  <!-- NAV
+================================================== -->
+<div class="container-fluid">
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Paradigma lógico</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Branco 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#div-1">Introdução</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#carousel">Paradigma Lógico</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prolog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#v-pills-tab1">Introdução</a></li>
+                <li><a class="dropdown-item" href="#v-pills-tab2">O que é?</a></li>
+                <li><a class="dropdown-item" href="#v-pills-tab3">como funciona?</a></li>
+                <li><a class="dropdown-item" href="#v-pills-tab4">Observações</a></li>
+                <li><a class="dropdown-item" href="#v-pills-tab5">Referencias</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#qrcode">QR code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#game">Vamos ao game</a>
+            </li>
+            </li>
+          </ul>
+          <!--
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+  <!-- div
+================================================== -->
+<div class="container">
+    <h1 class="title"> Prolog na Prática </h1>
+    <ul class="listdiv">
+      <li>Prolog é uma linguagem de programação que utiliza o paradigma de programação em lógica 
+        - especifico <strong> quê e o que lhe deve ser feito</strong>. Concebida com o objetivo inicial de resolver problemas 
+        associados à inteligência artificial/tradução de linguagem natural, hoje em dia as suas aplicações vão desde a LN/IA à lógica e à computação numérica e simbólica.
+      </li>
+      <li><strong>Conceitos Importante:</strong>  todo o input escrito na prompt, tem de terminar com um ponto final.
+      </li>      
+   </ul>
+   <h1 class="title"> Termos </h1>
+   <ul class="listdiv">
+     <li>  
+        Um dos conceitos importantes em Prolog é otermo, que consiste numa variável, 
+        constante, ou função que as aceita como argumentos (um termo composto, portanto). 
+    </li>
+         
+     <li>Quanto às <strong>constantes</strong>, estas podem ser átomos ou números. Os<strongátomos>átomos</strong>podem ser:
+     </li>
+     <ul class="top">
+     <li> 
+        como "nomes" numa LP normal (i.e postMalone, ciDADE, zero), começando sempre por minúscula;           
+     </li> 
+     <li> 
+        cadeias de carateres, utilizando plicas. Aqui, a primeira letra pode ser maiúscula (ou até _). São exemplos 'cidade', 'LeBron' e '_poster';           
+     </li> 
+     <li> 
+        um átomo especial (! , [ , ] , ; , { , } , + , - , * , / , **), sendo estes últimos pouco utilizados.           
+     </li>
+    </ul>     
+  </ul>
+   <h1 class="title"> Variáveis</h1>
+    <ul class="listdiv">
+      <li>começam sempre por maiúscula ou _ (sendo que _ por si só é a variável anónima,
+         utilizada quando o valor da variável não tem interesse numa expressão).
+      </li>
+      <li>
+        Várias ocorrências de variáveis anónimas numa mesma expressão correspondem a ocorrências distintas, 
+        e devem ser tratadas como tal - não é necessariamente a mesma variável em cada sítio.
+      </li>
+      <li><strong>Termos Compostos:</strong>correspondem à aplicação de um functor a um dado número de argumentos. Um functor é necessariamente um átomo. 
+        Existem funções pré-embutidas em Prolog, tais como +, *, /. São exemplos vencedor(X), 'vencedor'(_X), +(5, X), 5 + X. De realçar que escrever +(5, X) e 5 + X 
+        é exatamente a mesma coisa!
+    </li>
+    <li><strong>Literais:</strong>corresponde à aplicação de um predicado ao número apropriado de termos (devolve verdadeiro ou falso). Um literal de aridade (nº de argumentos) zero é um átomo.
+        Sintaticamente, não existe diferença entre termos compostos e literais - decidir se é uma coisa ou outra depende do contexto. 
+        São exemplos mae(Marge, Bart), filho(Bart, Marge).   
+   </ul>
+   <h1 class="title"> Leitura/Escrita </h1>
+    <ul class="listdiv">
+      <li>
+        O Prolog, tal como as outras linguagens de programação, também apresenta instruções de leitura e escrita de dados, 
+        instruções estas que correspondem a predicados.
+      </li>
+      <li><strong>Instruções de Leitura :</strong> Utilizamos, para leitura, o predicado read/1, que unifica o termo escrito como input com o termo argumento. 
+        Para além de na prompt termos de utilizar o ponto final, temos de o escrever também no input.
+        <p>?- read(a).</p>
+        <p>a.</p> 
+        <p>true.</p>
+      </li>
+   </ul>
+   <h1 class="title"> Operadores de Corte, Negação, Paragem/Execução Forçada </h1>
+    <ul class="listdiv">
+      <li><strong>Operador de Corte "!"</strong> é utilizado para indicar que, num programa onde um dado ramo produz soluções, devemos seguir esse ramo (algo do género "se já sabes que o que fizeste está bem, segue em frente.").
+         Tal como o `break` de outras linguagens, só deve ser utilizado quando estritamente necessário (e, quando utilizado, devidamente comentado), visto que pode alterar inadvertidamente a semântica declarativa do programa.
+        <p>Veja o exemplo abaixo:</p>
+        <p>% remove_repetidos(L1, L2)</p>
+        <p>remove_repetidos([], []).</p> 
+        <p>remove_repetidos([P|R], L) :-</p>
+        <p> membro(P, R), !, % caso seja membro, nem precisa de ir à cláusula seguinte</p>
+        <p>remove_repetidos(R, L). </p>
+        <p> remove_repetidos([P|R], [P|L]) :- remove_repetidos(R, L). </p>
+        <p> % a interação resultante é correta:</p>
+        <p> ?- remove_repetidos([a,c,c,a,b,c], L).</p>
+        <p>L = [a,b,c].</p>
+      </li>
+      <li><strong>Falhando Forçado</strong> O predicado fail/0 tem duas utilidades principais, sendo que apenas uma delas é vulgarmente utilizada.
+         O seu propósito é criar um nó falhado propositadamente.
+         O primeiro propósito, menos usual, é para obter todas as respostas a um objetivo de uma vez, em vez de ter de utilizar o ; para verificar todas as respostas.
+        Podemos observar uma interação deste género abaixo:
+       <p>?- membro(X,[1,2,3]), writeln(membro(X,[1,2,3])), fail.</p>
+       <p>membro(1,[1,2,3])</p> 
+       <p>membro(2,[1,2,3])</p>
+       <p>membro(3,[1,2,3])</p>
+       <p>false. </p>
+       <p>% esta interação é realizada sem a necessidade de ; </p>
+       <p> % a interação resultante é correta:</p>
+       <p>  % o próprio ; também não aparece</p>
+     </li>
+     <li> O segundo propósito, mais utilizado e bastante poderoso, é utilizar o fail em conjunto com o operador de corte. 
+        Um exemplo bastante simples para ilustrar a sua utilidade é o de verificar se duas listas são disjuntas - 
+        duas listas são disjuntas quando não têm nenhum membro em comum, pelo que basta haver um para o objetivo retornar false. 
+        Assim sendo, é interessante combinar um operador de corte com um fail, tal que:
+      <p>% disjuntas(L1, L2)</p>
+      <p>disjuntas([], _) :- !.</p> 
+      <p>disjuntas(_, []) :- !.</p>
+      <p>% caso seja membro, nem precisa de verificar mais, é falso de certeza</p>
+      <p>disjuntas([P1|_], L2) :-</p>
+      <p>member(P1, L2), </p>
+      <p>  !, fail.</p>
+      <p>  disjuntas([_|R1], L2) :- disjuntas(R1, L2).</p>
+    </li>
+    <li><strong>Negação </strong>A combinação mencionada acima, combinar o `fail` com o corte, permite definir a **negação por falhanço**, 
+        diferente da negação lógica. Esta negação é baseada na hipótese do mundo fechado, mencionada na introdução ao Prolog. 
+        Se o Prolog não consegue derivar algo, assume que é falso.
+        Em Prolog, este tipo de negação é utilizado através de um meta-predicado, `\+`, aplicado a literais.
+      <p>Observemos o exemplo:</p>
+      <p>membro(1,[1,2,3])</p> 
+      <p>membro(2,[1,2,3])</p>
+      <p>membro(3,[1,2,3])</p>
+      <p>false. </p>
+      <p>% esta interação é realizada sem a necessidade de ; </p>
+      <p> % a interação resultante é correta:</p>
+      <p>  % o próprio ; também não aparece</p>
+    </li>
+    <li>
+      Este programa pode ser lido tal que "para responder ao objetivo `\+(P)`, tente-se provar P. Caso não seja possível, o objetivo é satisfeito;
+       caso contrário, retorne-se `false`".
+      Em relação a um exemplo concreto:
+      <p>Em relação a um exemplo concreto:</p>
+      <p>voa(P) :- ave(P), \+ pinguim(P).</p> 
+      <p>% P voa caso seja uma ave que não um pinguim</p>
+      <p>ave(gelido)./p>
+      <p>ave(piupiu).</p>
+      <p>pinguim(gelido). </p>
+      <p> % interações possíveis</p>
+      <p> ?- voa(gelido).</p>
+      <p> false.</p>
+      <p> ?- voa(piupiu).</p>
+      <p> true. </p>
+      <p>?- voa(X). </p>
+      <p>X = piupiu ; </p>
+      <p> false.</p>
+      <p> A image abaixo é uma ilustração da interação acima.
+      </p>
+
+       imagem/imagem/imagem
+       <p>
+        A negação por falhanço não funciona, contudo, 
+        corretamente para objetivos não chãos (ou seja, para objetivos com variáveis).
+      </p>
+       <li><strong> Execução Forçada</strong>Apesar de teoricamente uma regra ter o formato <literal> :- <literais>, podemos supor a hipótese de literal ser "nada". A regra ficaria, então, com um aspeto do género :-
+         <literais>, algo do género "para provar "nada", prove os literais a seguir a :-". Pode ser bastante útil em casos de tentar fazer debug (i.e :- writeln('Este é o passo <n> do programa')), 
+          ou até mesmo para definir certos acontecimentos que acontecem sempre ao carregar um certo ficheiro no Prolog
+          <p>
+            Por exemplo, se utilizarem a GUI do SWI-Prolog, podem ir às definições e ao user init file e escrever alguns comandos que serão forçosamente executados, como por exemplo:
+          </p>
+          <p>% dark mode</p>
+            <p>:- use_module(library(theme/dark)).</p>
+            <p>% mensagem ao entrar - deverão ver isto ao abrir o SWI-Prolog </p>
+            <p> :- writeln('This is a test!').</p>
+            <p> % se estiverem na vossa diretoria default e quiserem abrir x ficheiros</p>
+            <p> % pode ser útil no projeto para não andarem sempre a abrir o ficheiro</p>
+            <p> :- [<nome do ficheiro>]..</p>
+       </li>
+       ref:https://resumos.leic.pt/lp/
+    </li>
+   </ul>
+  </div>
+
+
+</body>
+</html>
