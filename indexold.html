@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="fonts/webfonts">
+  <link rel="shortcut icon" type="imagex/png" href="img/A6 - 1 (3).ico">
+  <title>Paradigmas</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+
+  <!-- NAV
+================================================== -->
+<div class="container-fluid">
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Paradigma lógico
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Branco 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#div-1">Conceito</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#carousel">Sobre</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prolog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#secao-7">Linha do tempo</a></li>
+                <li><a class="dropdown-item" href="#div-8">Contexto Histórico</a></li>
+                <li><a class="dropdown-item" href="#card-historia"> Marcos Históricos</a></li>
+                <li><a class="dropdown-item" href="#div-9">Um pouco mais sobre Prolog</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index2.html">O Prolog Aplicado</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#game">Blibliografia</a>
+            </li>
+            </li>
+          </ul>
+          <!--
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        -->
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+  <!-- div
+================================================== -->
+<div class="container" id="div-1">
+  <div class="row justify-content-center">
+    <h1 class="title"> Conceito de paradigma</h1>
+    <p>
+      O conceito de paradigma se refere a um conjunto de ideias, teorias e práticas
+      aceitas por um grupo em determinado momento. Ele serve como um "modelo"
+      que orienta a forma como enxergamos e resolvemos problemas dentro de uma
+      área do conhecimento. O termo foi popularizado por Thomas Kuhn no seu livro "A
+      Estrutura das Revoluções Científicas", onde ele explica que, ao longo do tempo,
+      paradigmas dominantes podem ser substituídos por novos à medida que surgem
+      descobertas que o modelo antigo não consegue explicar.
+    </p>
+    <p>
+      No mundo da computação, paradigmas são fundamentais, principalmente no
+      desenvolvimento de software. Existem vários paradigmas de programação, e cada
+      um oferece uma maneira diferente de abordar e resolver problemas:      
+    </p>
+    <p>
+      O<strong> Paradigma Imperativo </strong>, por exemplo, se baseia em sequências de instruções
+      que dizem ao computador "o que fazer e como fazer", como em linguagens tipo C
+      e Python.
+    </p>
+    <p>
+      Já o<strong> Paradigma Orientado a Objetos </strong>organiza o código em torno de "objetos", que
+      são como pequenos blocos de dados e funcionalidades, sendo bastante usado
+      em linguagens como Java e C++.
+    </p>
+    <p>
+      No <strong> Paradigma Funcional </strong>, a ideia é tratar tudo como funções matemáticas sem
+      mexer no estado do programa, o que evita efeitos colaterais e torna o código mais
+      previsível (Haskell e Scala são exemplos de linguagens funcionais)
+    </p>
+    <p>
+      Por fim, o <strong> Paradigma Lógico </strong>, presente na linguagem Prolog, se baseia em fatos e
+      regras lógicas para resolver problemas, usando deduções automáticas
+    </p>
+    <p>
+      Esses paradigmas não são "concorrentes", ou seja, muitas vezes são combinados
+      para resolver diferentes tipos de problemas da melhor forma. A escolha do
+      paradigma depende do projeto, das necessidades e até das preferências dos
+      desenvolvedores.
+    </p>
+    <h1 class="title"> Origem do paradigma lógico</h1>
+    <p>
+      A origem do paradigma lógico remonta à lógica formal, um campo desenvolvido
+      pelos filósofos e matemáticos do século XIX, como Gottlob Frege e George Boole.
+      A base teórica foi posteriormente refinada por Bertrand Russell e Alfred North
+      Whitehead. No entanto, foi apenas nas décadas de 1960 e 1970, com o
+      surgimento da Inteligência Artificial, que o paradigma lógico encontrou aplicação
+      prática em computação. A criação da linguagem Prolog em 1972 por Alain
+      Colmerauer e Philippe Roussel marca um ponto crucial na história do paradigma,
+      permitindo a implementação prática de sistemas baseados em lógica de
+      predicados
+    </p>
+    <p>
+      No <strong> paradigma lógico </strong>, amplamente utilizado em linguagens como Prolog, a
+      resolução de problemas se baseia em <strong> fatos, regras, consultas e
+      unificação </strong>. Vamos explicar cada um desses conceitos e como eles se
+      relacionam para formar a lógica de programação:
+    </p>
+  </div>
+</div>
+
+<!-- carousel texto
+================================================== -->
+<div class="container-carousel1">
+<h1 class="title-carousel"> Sobre o Paradigma Lógico</h1>
+<div class="container-carousel" id="carousel">
+  <div class="row">
+    <div class="col-lg-12">
+<div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2 class="subtitle"> Fatos </h2>
+      <ul class="listcarousel">
+        <li>Fatos representam<strong>informações ou estados verdadeiros </strong> sobre o
+          problema ou o mundo.          
+        </li>
+        <li> No contexto do paradigma lógico, os fatos são declarações que afirmam
+          que algo é verdadeiro sem a necessidade de provar ou derivar essa
+          verdade.          
+        </li>
+        <li><strong>Exemplo:</strong>  
+           <p> pai(joao, maria).</p> 
+           <p><strong> Este fato afirma que João é o pai de Maria</strong></p>   
+        </li>             
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Regras</h2>
+      <ul class="listcarousel">
+        <li>Regras são <strong>afirmações condicionais </strong> que definem relações entre fatos.
+          Elas seguem a estrutura "Se X, então Y".          
+        </li>
+        <li> Regras permitem derivar novos fatos a partir de fatos existentes          
+        </li>
+        <li> Uma regra é composta de uma <strong>cabeça</strong>(o que se quer provar) e um <strong> corpo</strong> 
+          (condições que precisam ser satisfeitas para a cabeça ser verdade). 
+        </li>   
+        <li><strong> Exemplo:</strong>
+          <p> avo(X, Y) :- pai(X, Z), pai(Z, Y).</p>
+          <p><strong> Esta regra afirma que X é avô de Y se X é pai de Z e Z é pai de Y</strong></p>
+        </li>          
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Consultas</h2>
+      <ul class="listcarousel">
+        <li>Consultas são <strong>perguntas </strong> feitas ao sistema lógico para verificar se uma
+          determinada proposição é verdadeira com base nos fatos e regras
+          disponíveis.                    
+        </li>
+        <li> Quando uma consulta é feita, o sistema tenta <strong> provar</strong> a consulta, usando a 
+          <strong> unificação</strong> e a resolução lógica.         
+        </li>
+        <li><strong>Exemplo:</strong>
+          <p> ?- pai(joao, maria).</p>
+          <p><strong> Esta consulta pergunta ao sistema se João é pai de Maria. O sistema
+            responderá "sim" ou "não", dependendo dos fatos e regras
+            existentes.</strong></p>
+        </li>            
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Unificação</h2>
+      <ul class="listcarousel">
+        <li> A<strong> unificação</strong> é o processo de <strong> casar variáveis</strong> com valores ou outras
+          variáveis de modo que as proposições ou termos se tornem iguais.                          
+        </li>
+        <li>
+          No paradigma lógico, a unificação é essencial para a inferência, pois
+        permite combinar diferentes fatos e regras para resolver uma consulta.
+        </li>        
+        <li>
+          Se duas expressões podem ser tornadas iguais por substituição de
+          variáveis, elas são unificadas.
+        </li>  
+        <li><strong>Exemplo:</strong>
+          <p>?- pai(joao, X)</p>
+          <p><strong> O sistema tentará unificar a variável X com um valor que satisfaça a
+            consulta (neste caso, X = maria, com base no fato definido
+            anteriormente).</strong></p>
+        </li>            
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Como esses elementos funcionam juntos</h2>
+      <ul class="listcarousel">
+        <li><strong> Fatos</strong> fornecem as informações básicas, como "João é pai de Maria"                          
+        </li>
+        <li><strong> Regras</strong>permitem derivar novos fatos. Por exemplo, se você tem a regra que
+          "se X é pai de Y e Y é pai de Z, então X é avô de Z", você pode inferir que João
+          é avô de algum neto.                          
+        </li>       
+        <li><strong> Consultas</strong> são como fazemos perguntas ao sistema lógico, que então
+          tenta encontrar uma resposta com base nos fatos e regras                          
+        </li> 
+        <li><strong> Unificação</strong> é o processo pelo qual o sistema resolve essas consultas,
+          casando variáveis com valores para verificar se as proposições podem ser
+          satisfeitas.                                  
+        </li>            
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Exemplo completo:</h2>
+      <ul class="listcarousel">
+        <li><strong> Fatos</strong> 
+          <p>
+            pai(joao, maria).
+          </p> 
+          <p>
+            pai(maria, ana).
+          </p> 
+          <p>
+            mae(sara, maria).
+          </p>
+          <p><Strong>Aqui estamos dizendo que:</Strong></p>  
+          <p> 1.João é pai da Maria.
+          </p> 
+          <p>
+            2.Maria é mãe da Ana.
+          </p>   
+          <p>
+            3.Sara é mãe da Maria
+          </p>                 
+        </li>
+      </div>
+      <div class="carousel-item">
+        <h2 class="subtitle"> Exemplo completo:</h2>
+        <ul class="listcarousel">
+        <li><strong> Regras:</strong>Agora, vamos definir uma regra para descobrir quem é avô de quem:
+          <p>
+            avo(X, Y) :- pai(X, Z), pai(Z, Y).
+          </p>  
+          <p><strong> Essa regra basicamente fala: </strong></p>
+          <p> X é avô de Y se X for pai de Z e Z for pai de Y.</p>                
+        </li>  
+      </div>
+      <div class="carousel-item">
+        <h2 class="subtitle"> Exemplo completo:</h2>
+        <ul class="listcarousel">     
+        <li><strong> Consultas: </strong> Agora, podemos fazer uma pergunta ao sistema. Por exemplo, queremos
+          saber se o João é avô da Ana:  
+          <p> ?- avo(joao, ana).</p>   
+          <p>- O sistema vai procurar nos fatos e nas regras para ver se essa afirmação faz
+            sentido. E a resposta seria: </p>   
+          <p>
+            true.
+          </p> 
+          <p>
+            Ou seja, o sistema confirmou que João é realmente o avô de Ana. Nesse
+            exemplo, o <strong>paradigma lógico </strong>funciona declarando o que é verdade (fatos e
+            regras), e depois o sistema faz as deduções necessárias pra responder às
+            suas perguntas.
+          </p>                            
+        </li>            
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Curiosidades</h2>
+      <ul class="listcarousel">
+        <li> Base na lógica matemática </i></li>
+        <li> Similar a um problema em que um ser humano raciocinaria;</li> 
+        <li> Linguagem declarativa; </li>
+        <li> Conjunto de premissas que devem ser satisfeitas para obter um retorno verdadeiro; </li>
+        <li> Marco da Inteligência artificial;  </li>             
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Características do Paradigma:</h2>
+      <ul class="listcarousel">
+        <li> Independência da ordem das operações.</li>
+        <li> Utilização de backtracking</li>          
+     </ul>
+     <img src="img/Foto em preto e branco__Descrição gerada automaticamente.jpg" alt="" class="img_carousel">
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Vantagens:</h2>
+      <ul class="listcarousel">
+        <li> Permite a concepção da aplicação em alto nível de abstração;  </li>
+        <li> Linguagem mais próxima do raciocínio humano;</li>            
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Desvantagens:</h2>
+      <ul class="listcarousel">
+        <li> Dificuldade em lidar com problemas de algoritmos complexos; </li>
+        <li> Complexidade exponencial;</li>            
+     </ul>
+    </div>
+    <div class="carousel-item">
+      <h2 class="subtitle"> Diferenças do Paradigma Lógico para Outros Paradigmas:</h2>
+      <ul class="listcarousel">
+        <li> Imperativo x lógico</li>
+        <li> Orientado ao objeto x lógico </li>            
+     </ul>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+  <!-- div
+================================================== -->
+  <div class="container">
+    <h1 class="title"> Linha do tempo até o desenvolvimento do Prolog </h1>
+  </div>
+
+<!--começo linha tempo-->
+  <div>
+    <div class="section padding-top padding-bottom-small bb-bg-verde-escuro over-hide" id="secao-7">
+      <div class="container z-bigger">
+          <div class="row justify-content-center">
+              <div class="col-md-8">
+              </div>
+              <div class="clear"></div>
+          </div>
+  
+<!--Decada-->
+          <div class="container bootstrap snippets bootdey">
+              <section id="news" class="white-bg padding-top-bottom">
+                  <div class="container bootstrap snippets bootdey">
+                      <div class="timeline">
+                          <div class="date-title">
+                              <span>
+                                Décadas de 1940 e 1950: Primeiros Passos
+                              </span>
+                          </div>
+<!--anos-->
+                          <div class="row">
+                              <div class="col-sm-6 news-item">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>43</p>
+                                      </div>
+                                      <h2 class="news-title">Plankalkül</h2>
+                                      <p>Desenvolvido por Konrad Zuse, considerado o primeiro design de
+                                        uma linguagem de programação.</p>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6 news-item right">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>49</p>
+                                      </div>
+                                      <h2 class="news-title">Assembly Language</h2>
+                                      <p>O código de montagem se torna uma das primeiras
+                                        linguagens de baixo nível amplamente usadas.
+                                      </p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-6 news-item">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>57</p>
+                                      </div>
+                                      <h2 class="news-title">FORTRAN</h2>
+                                      <p>Desenvolvido pela IBM para cálculos científicos e numéricos, é
+                                        considerada a primeira linguagem de alto nível amplamente usada</p>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6 news-item right">
+                                <div class="news-content">
+                                    <div class="date">
+                                      <small>19</small>
+                                        <p>58</p>
+                                    </div>
+                                    <h2 class="news-title">Lisp</h2>
+                                    <p>
+                                      Criada por John McCarthy, baseada em cálculo lambda e focada em
+                                      inteligência artificial (IA) e manipulação de listas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-sm-6 news-item">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>59</p>
+                                      </div>
+                                      <h2 class="news-title"> COBOL</h2>
+                                      <p>Criada para aplicações empresariais e financeiras, tomou-se uma das
+                                        linguagens mais usadas no setor comercial</p>
+                                  </div>
+                              </div>
+                            </div>
+</div>                   
+<!--Decada-->
+                          <div class="date-title">
+                              <span>Década de 1960: Expansão da Programação</span>
+                          </div>
+<!--anos-->
+                          <div class="row">
+                              <div class="col-sm-6 news-item">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>60</p>
+                                      </div>
+                                      <h2 class="news-title"> ALGOL</h2>
+                                      <p>Uma das primeiras linguagens a influenciar diretamente o design de
+                                        várias outras (C, Pascal, etc.) com sua sintaxe estruturada.</p>
+                                  </div>
+                              </div>
+          
+                              <div class="col-sm-6 news-item right">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small> 19</small>
+                                          <p>62</p>
+                                      </div>
+                                      <h2 class="news-title">APL</h2>
+                                      <p>Uma linguagem de alto nível com foco em operações matemáticas
+                                        complexas, influenciando linguagens funcionais.</p>
+                                  </div>
+                              </div>
+  
+                              <div class="col-sm-6 news-item">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>64</p>
+                                      </div>
+                                      <h2 class="news-title">BASIC</h2>
+                                      <p>Criada por John G. Kemeny e Thomas E. Kurtz, visava tornar a
+                                        programação mais acessível.</p>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6 news-item right">
+                                <div class="news-content">
+                                    <div class="date">
+                                      <small>19</small>
+                                        <p>67</p>
+                                    </div>
+                                    <h2 class="news-title">Simula</h2>
+                                    <p>Desenvolvida por Ole-Johan Dahl e Kristen Nygaard, introduziu o
+                                      conceito de objetos, o precursor da programação orientada a objetos.</p>
+                                </div>
+                            </div>
+                          </div>
+
+  <!--decada-->
+                          <div class="date-title">
+                              <span>
+                                Década de 1970: Evolução da Lógica e Paradigmas
+                              </span>
+                          </div>
+<!--anos--> 
+                          <div class="row">
+                              <div class="col-sm-6 news-item">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>70</p>
+                                      </div>
+                                      <h2 class="news-title">Pascal </h2>
+                                      <p>Criada por Niklaus Wirth, uma linguagem estruturada de fácil
+                                        aprendizagem.</p>
+                                  </div>
+                              </div>
+          
+                              <div class="col-sm-6 news-item right">
+                                  <div class="news-content">
+                                      <div class="date">
+                                        <small>19</small>
+                                          <p>70</p>
+                                      </div>
+                                      <h2 class="news-title">Smalltalk</h2>
+                                      <p>Desenvolvido na Xerox PARC, expandiu os conceitos de
+                                        orientação a objetos.
+                                      </p>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6 news-item">
+                                <div class="news-content">
+                                    <div class="date">
+                                      <small>19</small>
+                                        <p>72</p>
+                                    </div>
+                                    <h2 class="news-title"> C </h2>
+                                    <p>Criada por Dennis Ritchie, tomou-se uma das linguagens mais influentes
+                                      devido à sua eficiência e versatilidade.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 news-item right">
+                              <div class="news-content">
+                                  <div class="date">
+                                    <small>19</small>
+                                      <p>72</p>
+                                  </div>
+                                  <h2 class="news-title">Surgimento do Prolog</h2>
+                                  <p>Prolog (Programming in Logic) - Criada por Alain Colmerauer e Philippe
+                                    Roussel em Marselha, França, baseada em lógica matemática e voltada para IA.
+                                  </p>
+                                    <p>Prolog foi influenciada pelas ideias de resolução lógica de Robert Kowalski e
+                                    nasceu como uma linguagem declarativa, usada principalmente em inteligência
+                                    artificial e em sistemas especialistas.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+<!-- contexto prolog 
+================================================== -->
+<div>
+  <div class="container" id="div-8">
+    <div class="row justify-content-center">
+      <h1 class="title"> Historia</h1>
+      <p>
+        O início da lógica está ligado ao pensamento científico. A lógica fornece uma linguagem
+        precisa para a expressão explícita dos objetivos, conhecimento e suposições de alguém, além
+        disso fornece a base para deduzir consequências de premissas, para estabelecer a consistência
+        das alegações e verificar a validade dos argumentos de alguém.
+      </p>
+      <p>
+        Ao longo dos séculos, a lógica passou de domínio filosófico para uma ciência aplicada que
+        influencia diretamente no mundo atual, desempenhando um papel crucial em áreas como
+        programação, inteligência artificial, matemática e ética (Avaliação de argumentos éticos,
+        Resolução de dilemas morais, Consistência e Coerência etc.)
+
+      </p>
+      <p>
+        No início da década de 1970 Robert Kowalski forneceu embasamento teórico para a
+        programação lógica, e estabeleceu que a lógica de predicados poderia ser a base de uma
+        linguagem de programação prática
+      </p>
+      <h1 class="title"> História do Prolog:</h3>
+      <p>
+        Na França no ano de 1972 Alain Colmerauer e sua equipe na Universidade de Aix-Marseille,
+        em colaboração com outros pesquisadores desenvolveram Prolog. O interesse inicial era o
+        processamento da linguagem natural, ou seja, construção de um sistema capaz de
+        compreender e gerar a linguagem humana.
+      </p>
+      <p>
+        Em 1972, Colmerauer e sua equipe desenvolveram o primeiro intérprete Prolog (um
+        software capaz de executar programas escritos na linguagem). A chave para o sucesso do
+        Prolog foi a combinação de lógica de predicados e o uso de unificação e backtracking
+        como mecanismos de inferência. Esses mecanismos permitiram ao Prolog explorar múltiplas
+        soluções possíveis para um problema, recuando e tentando novos caminhos quando
+        necessário.
+      </p>
+      <p>
+        A contribuição de Robert Kowalski foi crucial para a estrutura teórica da linguagem; um dos
+        marcos dessa ideia foi o artigo intitulado “Prediate Logic as a Programming Language”
+        (Lógica de Predicados como uma Linguagem de Programação).
+      </p>
+      <p>
+        O trabalho de Alain Colmerauer e sua equipe na Universidade de Marselha foi o ponto de
+        partida para o desenvolvimento de uma das linguagens de programação mais influentes no
+        campo da IA. A França não apenas deu origem ao Prolog, mas também ajudou a promovê-lo
+        internacionalmente, consolidando sua importância no desenvolvimento de sistemas lógicos e
+        especialistas.
+        O termo Prolog é derivado da expressão “Programming in Logic
+      </p>
+    </div>
+  </div>
+</div>
+
+   <!-- Card
+================================================== -->
+    <div class="section" id="card-historia">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">	
+                    <div class="main-title text-center">
+                        <h1 class="title">Momentos históricos Prolog</h1>	
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class=" card col-md-3">
+                    <div class="pricing p-xl-5 background-white text-center">
+                        <img src="img/allan Phillipe.png" alt="" class="img_card">
+                        <p class="pcard">
+                            <strong> Alain Colmerauer e Philippe Roussel</strong>
+                          </p>
+                            <p>
+                            Desenvolvimento da primeira versão em Marselha
+                        </p>	
+                    </div>
+                </div>	
+                <div class="card col-md-3">
+                    <div class="pricing p-xl-5 background-white text-center">
+                        <img src="img/Edinburgo.png" alt="" class="img_card">
+                        <p class="pcard">
+                          <strong> Universidade Edinburgo</strong>
+                          </p>
+                          <p>
+                          Lança o Edinburgh Prolog que se torna a implementação mais popular
+                         </p>	
+                    </div>
+                </div>	
+                <div class="card col-md-3">
+                  <div class="pricing p-xl-5 background-white text-center">
+                      <img src="img/card3.png" alt="" class="img_card">
+                      <p class="pcard">
+                        <strong> Projeto de computadores de quinta geração</strong>
+                      </p>	
+                      <p>
+                        Prolog é amplamente utilizada no projeto de computadores no Japão
+                      </p>
+                  </div>
+              </div>
+                <div class=" card col-md-3">
+                    <div class="pricing p-xl-5 background-white text-center">
+                      <img src="img/iacard.png" alt="" class="img_card">
+                      <p class="pcard">
+                          <strong> A jornada do Prolog nas Décadas de 1990 e futuras</strong>
+                        </p>
+                        <p>
+                          Prolog continua a ser usado em nichos especializados e como ferramenta educacional em cursos de IA e lógica.
+                        </p>
+                    </div>
+                </div>
+            </div>	
+        </div>		
+    </div>
+</div>
+  
+  <!-- div 
+================================================== -->
+<div class="container" id="div-9">
+  <h1 class="title"> Características </h1>
+  <ul class="listdiv">
+    <li><strong>Programação Declarativa:</strong> Os programas PROLOG são escritos de forma declarativa,
+      especificando o que deve ser feito, em vez de como deve ser feito. Isso facilita a
+      descrição de problemas complexos de forma concisa
+    </li>
+    <li><strong>Baseado em Regras:</strong>  Os programas PROLOG consistem em regras lógicas,
+      representadas como cláusulas, que são usadas para inferir informações e responder a
+      consultas.
+    </li>
+    <li><strong>Unificação:</strong>  O mecanismo central do PROLOG é a unificação, que permite combinar
+      termos lógicos, tomando-o eficaz para pesquisa em bancos de dados, representação de
+      conhecimento e resolução de problemas.      
+    </li>
+    <li><strong>Recursão:</strong> A recursão é uma característica fundamental do PROLOG e é usada para
+      expressar algoritmos de maneira elegante.
+    </li>        
+ </ul>
+ <h1 class="title"> Vantagens </h1>
+ <ul class="listdiv">
+   <li><strong>Expressividade:</strong> O PROLOG é altamente expressivo e eficaz para representar problemas
+     de lógica e sistemas especialistas.      
+   </li>
+   <li><strong>Manipulação de Conhecimento:</strong>  É bem adequado para a representação e manipulação
+     de conhecimento e fatos.
+   </li>
+   <li><strong>Resolução de Problemas :</strong> Não Determinísticos: O PROLOG pode ser usado para
+     resolver problemas não determinísticos, como roteamento, planejamento e resolução de
+     quebra-cabeças.            
+   </li>      
+</ul>
+ <h1 class="title"> Desvantagens</h1>
+  <ul class="listdiv">
+    <li><strong>Eficiência:</strong> O PROLOG nem sempre é a escolha mais eficiente para problemas que
+      requerem iterações intensivas, pois sua execução é baseada em inferência lógica, o que
+      pode ser lento em comparação com linguagens de programação imperativas.
+    </li>
+    <li><strong>Complexidade:</strong> Programar em PROLOG pode ser desafiador para iniciantes,
+      especialmente ao lidar com problemas complexos e regras lógicas intricadas.
+    </li>
+    <li><strong>Aplicabilidade Limitada:</strong> O PROLOG é mais apropriado para problemas específicos,
+      como IA, sistemas especialistas e processamento de linguagem natural, e pode não ser a
+      melhor escolha para aplicativos convencionais.    
+ </ul>
+ <h1 class="title"> Curiosidade:</h1>
+  <ul class="listdiv">
+    <li><strong>A coruja:</strong> A coruja do SWI-Prolog foi escolhida como símbolo por representar sabedoria,
+      combinando bem com a proposta da linguagem, que envolve lógica e resolução de
+      problemasivas.
+    </li>
+    <li><strong>O Interpretador/Compilador:</strong> Desenvolvido pela universidade de Amsterdã
+    </li>
+    <li><strong> O Ambiente:</strong> Gratuito e abrangente, desde seu início em 1987, o
+      desenvolvimento do SWI-PROLOG tem sido impulsionado pelas necessidades de aplicação
+      no mundo real; é amplamente usado em pesquisa e educação disponibilizando livros, tutoriais
+      comunidades, documentação entre outros.  
+    </li>
+    <li><strong> Vamos entender como funciona o Prolog na prática:</strong>
+ </ul>
+</div>
+  <!-- Button
+================================================== -->
+<div class="container-button" id="prolog-pratica">
+  <div class="row justify-content-center">
+    <h1 class="title-qr"></h1>
+    <div class="col-lg-12 ">
+      <a href="index2.html" class="btn btn-dark">Ir para Prolog na Pratica</a>
+    </div>
+  </div>
+</div>
+  <!-- QR code
+================================================== 
+<div class="container" id="qrcode">
+  <div class="row justify-content-center">
+    <h1 class="title-qr"> Visite nosso QR code</h1>
+    <div class="col-lg-12 ">
+      <img src="img/qr-exemplo.png" alt="" class="img_qr">
+    </div>
+  </div>
+</div>
+-->
+  <!-- div bibliografia
+================================================== -->
+  <div class="container-game" id="game">
+    <div class="row">
+      <h1 class="text-center">Bibliografia</h1>
+      <ul>
+        <li><strong>CodeQueens: </strong>
+          <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://codequeens.com.br/2023/10/22/prolog/">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            Página dedicada a compartilhar informações cruciais para profissionais
+            experientes e estudantes ansiosos por conhecimento na área de Engenharia de Software.
+            Destacar e celebrar o papel fundamental das mulheres no campo do desenvolvimento.
+          </a>
+        </li>
+        <li><strong>Mascote: </strong>
+          <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://swi-prolog.discourse.group/t/what-is-the-origin-of-the-swi-prolog-mascot/6492">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            Curiosidade Mascote
+          </a>
+        </li>
+        <li><strong>Interpretador/Compilador desenvolvido pela universidade de Amsterdã :</strong>
+          <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="Simply Logical - Peter Flac">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            Interpretador/Compilador desenvolvido pela universidade de Amsterdã
+          </a>
+        </li>
+        <li><strong>Artigo: </strong>
+          <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://exhibits.stanford.edu/cs/catalog/kv359wz9060">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            The Japanese national Fifth Generation project: Introduction, survey, and
+          Evaluation
+          </a>
+        </li>
+        <li><strong>Mais referencias: </strong>
+          <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://resumos.leic.pt/lp/">
+            <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+          Visitar 
+          </a>
+        </li>
+        <li>
+          Moura, Karla. "Paradigmas de Programação: Um Estudo Comparativo."
+          <p> Zambon, Fabio A. "Paradigmas e sua Influência no Desenvolvimento de </p>
+          <p> Linguagens de Programação."</p>
+          <p> Carvalho, Antonio F. "Paradigmas de Desenvolvimento de Software e Seus
+              Impactos."</p>
+          </p> Forbellone e Eberspächer “Lógica de Programação: Teoria e Prática.” </p>
+        </li>
+      </ul>
+      </div>
+      <div class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">	
+                    <div class="main-title text-center">
+                        <h1>livros</h1>	
+                    </div>
+                </div>
+                <div class="dark"></div>
+                <div class="card-bb col-md-4">
+                    <div class="pricing p-xl-5 background-dark text-center">
+                        <img src="img/livro1.png" alt="" class="img_card">
+                        <p class="pcard">
+                            <strong></strong>
+                          </p>
+                            <p>
+                              Princípios de linguagens de programação - Ana Cristina Vieira de Melo
+                              Flávio Soares Corrêa da Silva Universidade de São Paulo.
+                        </p>	
+                    </div>
+                </div>	
+                <div class="card-bb col-md-4">
+                    <div class="pricing p-xl-5 background-white text-center">
+                        <img src="img/livro2.png" alt="" class="img_card">
+                        <p class="pcard">
+                          <strong> </strong>
+                          </p>
+                          <p>
+                            The Art of Prolog — Advanced Programming Techniques - Leon Sterling,
+                            Ehud Shapiro
+                         </p>	
+                    </div>
+                </div>	
+                <div class="card-bb col-md-4">
+                  <div class="pricing p-xl-5 background-white text-center">
+                      <img src="img/livro3.png" alt="" class="img_card">
+                      <p class="pcard">
+                        <strong></strong>
+                      </p>	
+                      <p>
+                        Simply Logical - Peter Flach
+                      </p>
+                  </div>
+              </div>
+            </div>	
+        </div>		
+    </div>
+</div>
+</div>
+</div>
+
+  
+</body>
+</html>
