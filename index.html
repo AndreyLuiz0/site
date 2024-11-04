@@ -97,7 +97,7 @@ div-1 -->
     </p>
     <p>
       Por fim, o <strong> Paradigma Lógico </strong>, presente na linguagem Prolog, se baseia em fatos e
-      regras lógicas para resolver problemas, usando deduções automáticas
+      regras lógicas para resolver problemas, usando deduções automáticas.
     </p>
     <p>
       Esses paradigmas não são "concorrentes", ou seja, muitas vezes são combinados
@@ -141,7 +141,7 @@ div-2 -->
                 <div class="carousel-item active">
                   <h2 class="subtitle"> Fatos </h2>
                   <ul class="listcarousel">
-                    <li>Fatos representam<strong>informações ou estados verdadeiros </strong> sobre o
+                    <li>Fatos representam<strong> informações ou estados verdadeiros </strong> sobre o
                       problema ou o mundo.          
                     </li>
                     <li> No contexto do paradigma lógico, os fatos são declarações que afirmam
@@ -216,7 +216,7 @@ div-2 -->
                   <ul class="listcarousel">
                     <li><strong> Fatos</strong> fornecem as informações básicas, como "João é pai de Maria"                          
                     </li>
-                    <li><strong> Regras</strong>permitem derivar novos fatos. Por exemplo, se você tem a regra que
+                    <li><strong> Regras</strong> permitem derivar novos fatos. Por exemplo, se você tem a regra que
                       "se X é pai de Y e Y é pai de Z, então X é avô de Z", você pode inferir que João
                       é avô de algum neto.                          
                     </li>       
@@ -604,7 +604,7 @@ div-2 -->
       campo da IA. A França não apenas deu origem ao Prolog, mas também ajudou a promovê-lo
       internacionalmente, consolidando sua importância no desenvolvimento de sistemas lógicos e
       especialistas.
-      O termo Prolog é derivado da expressão “Programming in Logic
+      O termo Prolog é derivado da expressão “Programming in Logic".
     </p>
   </div>
 </div>
@@ -753,36 +753,36 @@ div-2 -->
       constante, ou função que as aceita como argumentos (um termo composto, portanto). 
   </li>
        
-   <li>Quanto às <strong>constantes</strong>, estas podem ser átomos ou números. Os<strongátomos>átomos</strong>podem ser:
+   <li>Quanto às <strong>constantes</strong>, estas podem ser átomos ou números. Os<strongátomos> átomos</strong> podem ser:
    </li>
    <ul class="top">
    <li> 
-      como "nomes" numa LP normal (i.e postMalone, ciDADE, zero),começando sempre por minúscula;           
+      como "nomes"(postMalone, ciDADE, zero),começando sempre por minúscula;           
    </li> 
    <li> 
-      cadeias de carateres, utilizando plicas. Aqui, a primeira letra pode ser maiúscula (ou até_). São exemplos 'cidade','LeBron'e'_poster';           
+      cadeias de carateres. Aqui, a primeira letra pode ser maiúscula (ou até "_"). São exemplos: 'cidade', 'LeBron' e '_poster';           
    </li> 
    <li> 
-      um átomo especial (! , [ , ] , ; , { , } , + , - , * , / , **), sendo estes últimos pouco utilizados.           
+      um átomo especial ( ! , [ , ] , ; , { , } , + , - , * , / , ** ), sendo estes os últimos pouco utilizados.           
    </li>
   </ul>     
 </ul>
  <h1 class="title"> Variáveis</h1>
   <ul class="listdiv">
-    <li>começam sempre por maiúscula ou"_"(sendo que"_"por si só é a <strong> variável anónima </strong>,
+    <li>Começam sempre por maiúscula ou "_" (sendo que "_" por si só é a <strong> variável anónima </strong>,
        utilizada quando o valor da variável não tem interesse numa expressão).
     </li>
     <li>
       Várias ocorrências de variáveis anónimas numa mesma expressão correspondem a <strong> ocorrências distintas </strong>, 
       e devem ser tratadas como tal - <strong> não é necessariamente a mesma variável em cada sítio. </strong>
     </li>
-    <li><strong>Termos Compostos:</strong>correspondem à aplicação de um functor a um dado número de argumentos. Um functor é necessariamente um átomo. 
-      Existem funções pré-embutidas em Prolog, tais como "+, *, /". São exemplos "vencedor(X), 'vencedor'(_X), +(5, X), 5 + X". De realçar que escrever "+(5, X)" e "5 + X"
+    <li><strong>Termos Compostos:</strong> correspondem à aplicação de um functor a um dado número de argumentos. Um functor é necessariamente um átomo. 
+      Existem funções pré-embutidas em Prolog, tais como " +,  *,  / ". São exemplos: "vencedor(X), 'vencedor' (_X), +(5, X), 5 + X". De realçar que escrever "+(5, X)" e "5 + X"
       é exatamente a mesma coisa!
   </li>
   <li><strong>Literais:</strong>corresponde à aplicação de um predicado ao número apropriado de termos (devolve verdadeiro ou falso). Um literal de aridade (nº de argumentos) zero é um átomo.
-      Sintaticamente, não existe diferença entre termos compostos e literais - decidir se é uma coisa ou outra depende do contexto. 
-      São exemplos mae(Marge, Bart), filho(Bart, Marge).   
+      Sintaticamente, não existe diferença entre termos compostos e literais - A decisão se é uma coisa ou outra depende do contexto. 
+      São exemplos: mae(Marge, Bart), filho(Bart, Marge).   
  </ul>
  <h1 class="title"> Leitura/Escrita </h1>
   <ul class="listdiv">
@@ -791,7 +791,7 @@ div-2 -->
       instruções estas que correspondem a predicados.
     </li>
     <li><strong>Instruções de Leitura :</strong> Utilizamos, para leitura, o predicado "read/1", que unifica o termo escrito como input com o termo argumento. 
-      Para além de na "prompt " termos de utilizar o ponto final, temos de o escrever também no input.
+      Para além de "prompt" temos de utilizar o ponto final, temos de o escrever também no input.
       <div class="exemplo">
       <p class="red"> <strong>?- read(a). </strong></p>
       <p class="red">a.</p> 
